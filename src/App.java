@@ -13,12 +13,12 @@ public class App {
 
         //Text Box Adding
         Display_Box textBox = new Display_Box();
-        textBox.secondaryBox(frame);
+        JTextField secondaryField = textBox.secondaryBox(frame);
         JTextField primaryField = textBox.primaryBox();
 
         //Buttons Adding
         Buttons buttons = new Buttons();
-        buttons.firstRowButtons(frame);
+        buttons.firstRowButtons(frame,primaryField,secondaryField);
         buttons.secondRowButtons();
         buttons.thirdRowButtons();
         buttons.fourthRowButtons();
