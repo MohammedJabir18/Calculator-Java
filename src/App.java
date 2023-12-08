@@ -11,6 +11,15 @@ public class App {
         Dark_Light_Mode DLMode = new Dark_Light_Mode();
         DLMode.dark_light_Button(frame);
 
+        //Text Box Enabling
+        Display_Box textBox = new Display_Box();
+        textBox.secondaryBox(frame);
+        textBox.primaryBox();
+
+        //Buttons Setting
+        Buttons buttons = new Buttons();
+        buttons.firstRowButtons(frame);
+
         frame.setVisible(true);
 
     }
