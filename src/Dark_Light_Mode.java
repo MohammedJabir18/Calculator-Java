@@ -22,7 +22,7 @@ public class Dark_Light_Mode {
                 Image darkNewImage = darkImage.getScaledInstance(20, 20, Image.SCALE_SMOOTH);
                 darkImageIcon = new ImageIcon(darkNewImage);
                 DLButton.setIcon(darkImageIcon);
-                frame.getContentPane().setBackground(new Color(27, 36, 48));
+                frame.getContentPane().setBackground(new Color(20, 30, 37));
             }
             else {
                 imageIcon = new ImageIcon("Image/light.png");

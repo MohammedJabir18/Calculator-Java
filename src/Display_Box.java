@@ -6,7 +6,7 @@ public class Display_Box {
     JFrame frame;
     void secondaryBox(JFrame frame){
         JTextField secondaryField=new JTextField();
-        secondaryField.setBounds(24,50,338,30);
+        secondaryField.setBounds(24,50,279,30);
         secondaryField.setBorder(new MatteBorder(2, 2, 0, 2, Color.BLACK));
         secondaryField.setHorizontalAlignment(JTextField.RIGHT);
         Font secondaryBoxFont=secondaryField.getFont().deriveFont(Font.BOLD,14);
@@ -17,13 +17,14 @@ public class Display_Box {
         frame.add(secondaryField);
         this.frame=frame;
     }
-    void primaryBox(){
+    JTextField primaryBox(){
         JTextField primaryField=new JTextField();
-        primaryField.setBounds(24,80,338,35);
+        primaryField.setBounds(24,80,279,35);
         primaryField.setBorder(new MatteBorder(0, 2, 2, 2, Color.BLACK));
         primaryField.setHorizontalAlignment(JTextField.RIGHT);
         Font primaryBoxFont=primaryField.getFont().deriveFont(Font.BOLD,20);
         primaryField.setFont(primaryBoxFont);
         frame.add(primaryField);
+        return primaryField;
     }
 }
