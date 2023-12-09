@@ -420,7 +420,6 @@ public class Buttons implements ActionListener {
                     result = num1 + num2;
                     answer = String.format("%.2f", result);
                     secondaryField.setText(oldValue+" + "+newValue+" =");
-                    primaryField.setText(answer);
                     isResultFound=true;
                     break;
                 case "sub":
@@ -455,6 +454,12 @@ public class Buttons implements ActionListener {
                     primaryField.setText(primaryField.getText());
                     secondaryField.setText(primaryField.getText());
                     break;
+            }
+            if (Double.toString(result).endsWith(".00")){
+                primaryField.setText(Double.toString(result).replace(".00",""));
+            }
+            else {
+                primaryField.setText(Double.toString(result));
             }
         }
     }
