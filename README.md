@@ -33,6 +33,6 @@ If you find any bugs or have ideas for improvements, please open an issue or sub
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
 This project is licensed under the `MIT License` - see the `LICENSE.md` file for details.
